@@ -1,6 +1,13 @@
+Template.base.helpers({
+  allRolls: function() {
+    return Rolls.find();
+  }
+});
+
 Template.base.events({
 	'click .createRoll': function(e) {
 		e.preventDefault();
+
 		Rolls.insert({
 			rollName: 'Warhammer',
 			rollDamage: 'Radiant',
