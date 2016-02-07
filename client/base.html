@@ -1,3 +1,11 @@
 <template name='base'>
-	<h1> D&amp;D SHIZ </h1>
+	<div class='container'>
+		<h1> D&amp;D SHIZ </h1>
+		{{#each allRolls}}
+			{{> rollInfo}}
+		{{/each}}
+		<a class='btn btn-default createRoll' href='#'>
+			Create Roll.
+		</a>
+	</div>
 </template>
