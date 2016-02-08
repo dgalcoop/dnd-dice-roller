@@ -2,32 +2,87 @@
 	<form class="form-horizontal">
   <div class="form-group">
     <label for="rollName" class="col-sm-2 control-label">Roll Name</label>
-    <div class="col-sm-10">
+    <div class="col-sm-3">
       <input type="text" class="form-control" id="rollName" placeholder="Roll Name">
     </div>
   </div>
   <div class="form-group">
     <label for="diceAmount" class="col-sm-2 control-label">Number of Dice</label>
     <div class="col-sm-10">
-      <input type="text" class="form-control" id="diceAmount" placeholder="Number of Dice">
+      <select id="diceAmount">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+        <option>6</option>
+        <option>7</option>
+        <option>8</option>
+        <option>9</option>
+        <option>10</option>
+      </select>
     </div>
   </div>
   <div class="form-group">
     <label for="diceType" class="col-sm-2 control-label">Type of Dice</label>
     <div class="col-sm-10">
-      <input type="text" class="form-control" id="diceType" placeholder="Type of Dice">
+      <select id="diceType">
+        <option>d4</option>
+        <option>d6</option>
+        <option>d8</option>
+        <option>d10</option>
+        <option>d12</option>
+        <option>d20</option>
+      </select>
     </div>
   </div>
   <div class="form-group">
     <label for="modifier" class="col-sm-2 control-label">Modifier</label>
     <div class="col-sm-10">
-      <input type="text" class="form-control" id="modifier" placeholder="Modifier">
+      <select id='modifier'>
+        <option>10</option>
+        <option>9</option>
+        <option>8</option>
+        <option>7</option>
+        <option>6</option>
+        <option>5</option>
+        <option>4</option>
+        <option>3</option>
+        <option>2</option>
+        <option>1</option>
+        <option selected="selected">0</option>
+        <option>-1</option>
+        <option>-2</option>
+        <option>-3</option>
+        <option>-4</option>
+        <option>-5</option>
+        <option>-6</option>
+        <option>-7</option>
+        <option>-8</option>
+        <option>-9</option>
+        <option>-10</option>
+      </select>
     </div>
   </div>
   <div class="form-group">
     <label for="damageType" class="col-sm-2 control-label">Damage Type</label>
     <div class="col-sm-10">
-      <input type="text" class="form-control" id="damageType" placeholder="Damage Type">
+      <select id="damageType">
+        <option>No</option>
+        <option>Acid</option>
+        <option>Bludgeoning</option>
+        <option>Cold</option>
+        <option>Fire</option>
+        <option>Force</option>
+        <option>Lightning</option>
+        <option>Necrotic</option>
+        <option>Piercing</option>
+        <option>Poison</option>
+        <option>Psychic</option>
+        <option>Radiant</option>
+        <option>Slashing</option>
+        <option>Thunder</option>
+      </select>
     </div>
   </div>
   <div class="form-group">
