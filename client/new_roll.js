@@ -13,7 +13,7 @@ Template.newRoll.events({
 			damageType: damageType,
 			diceAmount: diceAmount,
 			diceType: diceType,
-			modifier: modifier
+			modifier: modifier,
 		});
 		Router.go('/');
 	}
