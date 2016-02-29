@@ -22,7 +22,7 @@ Template.newRoll.events({
 Template.newRoll.events({
 	'click .cancelRoll': function(e) {
 		e.preventDefault();
-		Router.go('/');
-		console.log('butts');
+		Router.go('/');s
+		console.log('butts'); 
 	}
 });
