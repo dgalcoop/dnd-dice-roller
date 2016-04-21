@@ -1,10 +1,10 @@
 var character = {
-	name: "Ori";
-	race: "Dwarf";
-	class: "Monk";
-	level: "1";
-	background: "Noble";
-	alignment: "Lawful Good";
+	name: "Ori",
+	race: "Dwarf",
+	class: "Monk",
+	level: "1",
+	background: "Noble",
+	alignment: "Lawful Good",
 };
 
 var coreStats = {
