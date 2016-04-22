@@ -1,10 +1,14 @@
 <template name='base'>
-	<div class='container'>
-		<h1><strong>Roll Collection</strong></h1>
-		{{#each allRolls}}
-			{{> rollInfo}}
-		{{/each}}
-		
-		<a href='{{pathFor 'newRoll'}}' class='btn btn-default createRoll' style='margin-top: 50px;'>Add Roll.</a>
+	<div class="full-grid">
+		<div class="rolls-summary">
+			{{#each allRolls}}
+				{{> rollInfo}}
+			{{/each}}
+			
+			<a href='{{pathFor 'newRoll'}}' class='btn btn-default createRoll' style='margin-top: 50px;'>Add Roll.</a>
+		</div>
+		<div class="results">
+			<h2>{{ postedResult }}</h2>
+		</div>
 	</div>
 </template>

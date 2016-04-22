@@ -1,14 +1,14 @@
 <template name='rollInfo'>
-	<!-- Warhammer, Radiant Damage -->
-	<!-- 4d4 + 3 -->
-	<div class="row" style="border-bottom: 1px solid #bbb;">
-		<div class="col-md-5">
-			<h2>{{rollName}}</h2>
-			<h3>{{diceAmount}}{{diceType}}{{modifier}} {{damageType}} Damage</h3>
-		</div>
-		<div class="col-md-3">
-			<a href="#" class="btn btn-success rollRoll" style="margin-top: 25px;">Roll</a><br>
-			<a href="#" class="btn btn-danger deleteRoll" style="margin-top: 7px;">Delete</a>
+	<div class="full-grid">
+		<div class="roll-row">
+			<div class="roll-info">
+				<h2>{{rollName}}</h2>
+				<h3>{{diceAmount}}{{diceType}}{{modifier}} {{damageType}} Damage</h3>
+			</div>
+			<div class="roll-control">
+				<a href="#" class="btn btn-success rollRoll" style="margin-top: 25px;">Roll</a><br>
+				<a href="#" class="btn btn-danger deleteRoll" style="margin-top: 7px;">Delete</a>
+			</div>
 		</div>
 	</div>
 </template>

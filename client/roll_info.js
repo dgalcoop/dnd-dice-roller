@@ -1,5 +1,4 @@
 
-
 Template.rollInfo.events({
 	'click .deleteRoll': function(e) {
 		e.preventDefault();
@@ -20,7 +19,7 @@ Template.rollInfo.events({
 			var rollResult = Math.floor(Math.random() * sides + 1);
 			totalDiceRoll += rollResult;
 		}
-		var finalResult = totalDiceRoll + parseFloat(this.modifier);
+		finalResult = totalDiceRoll + parseFloat(this.modifier);
 		if (finalResult < 0) {
 			finalResult = 0;
 		}

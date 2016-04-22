@@ -1,0 +1,56 @@
+@import "{meta:susy}/susy";
+
+$susy: (
+		container: 100%,
+		columns: 16,
+		//column-width: 50px,
+		gutters: 1/2,
+		gutter-position: inside
+);
+
+@mixin clearfix {
+	&:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
+
+.full-grid {
+	@include layout($susy);
+	@include container(100%);
+	@include clearfix;
+}
+
+// HEADER
+
+.header-bar {
+	@include span(16 of 16);
+	border-bottom: 1px solid #bbb;
+}
+
+// ROLL ROW
+
+.rolls-summary {
+	@include span(8 of 16);
+	display: inline-block;
+}
+.roll-row {
+	border-bottom: 1px solid #bbb;
+	div {
+		@include span(8 of 16);
+	}
+	.roll-info {
+
+	}
+	.roll-control {
+
+	}
+}
+
+// ROLL RESULTS
+
+.results {
+	@include span(8 of 16);
+	display: inline-block;
+}
