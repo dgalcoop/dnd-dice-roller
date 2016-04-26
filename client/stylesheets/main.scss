@@ -33,18 +33,15 @@ $susy: (
 
 .rolls-summary {
 	@include span(8 of 16);
+	margin-top: 10px;
 	display: inline-block;
 }
 .roll-row {
-	border-bottom: 1px solid #bbb;
-	div {
+	.roll-info {
 		@include span(8 of 16);
 	}
-	.roll-info {
-
-	}
 	.roll-control {
-
+		@include span(8 of 16);
 	}
 }
 

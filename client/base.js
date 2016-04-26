@@ -2,7 +2,8 @@ Template.base.helpers({
   allRolls: function() {
     return Rolls.find();
   },
-  postedResult: function() {
-  	return finalResult;
-  }
 });
+
+Template.base.finalResult = function() {
+	return Session.get('finalResult');
+};

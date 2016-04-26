@@ -23,7 +23,7 @@ Template.rollInfo.events({
 		if (finalResult < 0) {
 			finalResult = 0;
 		}
-		console.log(finalResult);
+		Session.set('finalResult', finalResult);
 	}
 });
 
