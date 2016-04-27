@@ -1,4 +1,5 @@
 @import "{meta:susy}/susy";
+@import url(https://fonts.googleapis.com/css?family=Work+Sans);
 
 $susy: (
 		container: 100%,
@@ -22,26 +23,39 @@ $susy: (
 	@include clearfix;
 }
 
+$work-sans: 'Work Sans', sans-serif;
+
+body {
+	font-family: $work-sans;
+}
+
 // HEADER
 
 .header-bar {
 	@include span(16 of 16);
-	border-bottom: 1px solid #bbb;
+	background-color: #2B193D;
+	color: white;
 }
 
 // ROLL ROW
 
 .rolls-summary {
 	@include span(8 of 16);
-	margin-top: 10px;
+	margin-top: 5px;
 	display: inline-block;
 }
+
 .roll-row {
+	background-color: #484D6D;
+	color: white;
+	overflow: hidden;
+	margin-top: 2.5px;
+	margin-bottom: 2.5px;
 	.roll-info {
-		@include span(8 of 16);
+		@include span(12 of 16);
 	}
 	.roll-control {
-		@include span(8 of 16);
+		@include span(4 of 16);
 	}
 }
 
