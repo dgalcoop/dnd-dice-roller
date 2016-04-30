@@ -25,6 +25,17 @@ $susy: (
 
 $work-sans: 'Work Sans', sans-serif;
 
+a.button, a.button:hover {
+	padding: 8px;
+	color: white;
+	text-decoration: none;
+	font-family: $work-sans;
+	display: inline-block;
+	border-radius: 5px;
+}
+
+// BODY FEATURES
+
 body {
 	font-family: $work-sans;
 }
@@ -33,7 +44,7 @@ body {
 
 .header-bar {
 	@include span(16 of 16);
-	background-color: #2B193D;
+	background-color: #7D5BA6;
 	color: white;
 }
 
@@ -43,19 +54,32 @@ body {
 	@include span(8 of 16);
 	margin-top: 5px;
 	display: inline-block;
+	.createRoll {
+		background-color: #9BC995;
+	}
 }
 
 .roll-row {
-	background-color: #484D6D;
+	background-color: #ABB9E9;
 	color: white;
 	overflow: hidden;
 	margin-top: 2.5px;
 	margin-bottom: 2.5px;
+	border-radius: 10px;
 	.roll-info {
 		@include span(12 of 16);
 	}
 	.roll-control {
 		@include span(4 of 16);
+		padding-top: 12px;
+		text-align: center;
+		.rollRoll {
+			background-color: #9BC995;
+		}
+		.deleteRoll {
+			margin-top: 7px;
+			background-color: #FF8C61;
+		}
 	}
 }
 
@@ -63,5 +87,16 @@ body {
 
 .results {
 	@include span(8 of 16);
+	margin-top: 7.5px;
 	display: inline-block;
+	.roll-result {
+		@include span(16 of 16);
+		text-align: center;
+		background-color: #8681C6;
+		border-radius: 10px;
+		h2 {
+			color: white;
+			font-size: 40px;
+		}
+	}
 }

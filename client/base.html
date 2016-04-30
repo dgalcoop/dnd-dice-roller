@@ -5,10 +5,12 @@
 				{{> rollInfo}}
 			{{/each}}
 			
-			<a href='{{pathFor 'newRoll'}}' class='btn btn-default createRoll'>Add Roll.</a>
+			<a href='{{pathFor 'newRoll'}}' class='button createRoll'>Add Roll</a>
 		</div>
 		<div class="results">
-		<h2>{{finalResult}}</h2>
+			<div class="roll-result">
+				<h2>{{finalResult}} {{damageType}}</h2>
+			</div>
 		</div>
 	</div>
 </template>
